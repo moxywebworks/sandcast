@@ -1,2 +1,2 @@
 # sandcast
-A boilerplate theme to kickstart site development
+A boilerplate theme to kickstart site development.
