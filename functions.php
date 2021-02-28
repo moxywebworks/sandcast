@@ -292,13 +292,12 @@ function plate_comments( $comment, $args, $depth ) {
 Use this to add Google or other web fonts.
 */
 
-// add_action( 'wp_enqueue_scripts', 'plate_fonts' );
+ add_action( 'wp_enqueue_scripts', 'plate_fonts' );
+ function plate_fonts() {
 
-// function plate_fonts() {
+     wp_enqueue_style( 'plate-fonts', '//fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap' );
 
-//     wp_enqueue_style( 'plate-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,' );
-
-// }
+ }
 
 
 /****************************************
@@ -436,32 +435,27 @@ function plate_scripts_and_styles() {
         // modernizr (3.6.0 2018-04-17)
         wp_enqueue_script( 'modernizr', get_theme_file_uri() . '/library/js/libs/modernizr-custom-min.js', array(), '3.6.0', false );
 
-
-
- 
-
-
+		// register BULMA stylesheet
+        wp_enqueue_style( 'bulma-stylesheet', get_theme_file_uri() . '/library/moxy-bulma/css/mystyles.css', array(), '', 'all' );
+        
+        // register AOS Animations stylesheet: https://michalsnik.github.io/aos/
+        wp_enqueue_style( 'aos-stylesheet', get_theme_file_uri() . '/library/moxy-aos/dist/aos.css', array(), '', 'all' );
+        
+        // register AOS Animations stylesheet: https://michalsnik.github.io/aos/
+        wp_enqueue_style( 'fa5-stylesheet', get_theme_file_uri() . '/library/fontawesome-5/css/all.min.css', array(), '', 'all' );
 
         // register main stylesheet
         wp_enqueue_style( 'plate-stylesheet', get_theme_file_uri() . '/library/css/style.css', array(), '', 'all' );
-        
-        
-        
-        
-        
-        // register BULMA stylesheet
-        wp_enqueue_style( 'bulma-stylesheet', get_theme_file_uri() . '/library/mybulma/css/mystyles.css', array(), '', 'all' );
-        
-        
-        
-        
 
         // ie-only style sheet
         wp_enqueue_style( 'plate-ie-only', get_theme_file_uri() . '/library/css/ie.css', array(), '' );
 
         // comment reply script for threaded comments
         if ( is_singular() AND comments_open() AND ( get_option('thread_comments') == 1 )) { wp_enqueue_script( 'comment-reply' ); }
-
+        
+        // adding aos in the footer
+        wp_enqueue_script( 'aos-js', get_theme_file_uri() . '/library/moxy-aos/dist/aos.js', array( 'jquery' ), '', true );
+        
         // adding scripts file in the footer
         wp_enqueue_script( 'plate-js', get_theme_file_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 

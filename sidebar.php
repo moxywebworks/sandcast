@@ -7,7 +7,7 @@
 */
 ?>
 
-<aside id="sidebar1" class="sidebar" role="complementary">
+<aside id="sidebar1" class="sidebar column" role="complementary">
 
     <div class="inner-sidebar wrap">
 

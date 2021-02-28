@@ -56,11 +56,11 @@
 	<body <?php body_class(); ?> itemscope itemtype="https://schema.org/WebPage">
 
         <?php // remove grid classes below if you aren't using CSS Grid (but you should) ?>
-		<div id="container" class="grid grid-aside">
+		<div id="container" class="">
 
 			<header class="header" id="header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
 
-                <div id="inner-header" class="wrap">
+                <div id="inner-header" class="container">
 
                     <?php // updated with proper markup and wrapping div for organization ?>
                     <div id="bloginfo" itemscope itemtype="https://schema.org/Organization">
@@ -77,11 +77,13 @@
                                 <a href="<?php echo home_url(); ?>" rel="nofollow" itemprop="url" title="<?php bloginfo('name'); ?>"><?php the_custom_logo(); ?></a>
                             </div>
 
+<!--
                             <div id="site-title" class="site-title" itemprop="name">
                                 <a href="<?php echo home_url(); ?>" rel="nofollow" itemprop="url" title="<?php bloginfo('name'); ?>">
                                     <?php bloginfo('name'); ?>
                                 </a>
                             </div>
+-->
                             
                         <?php } else { ?>
 
