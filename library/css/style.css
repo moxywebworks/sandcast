@@ -1299,7 +1299,7 @@ you can add resource intensive styles.
 
   ******************************************************************/
   h2 {
-    border: 3px solid red !important;
+    border: 3px solid green !important;
   }
 
   .cd-section {

@@ -30,7 +30,7 @@
 	 </div>
 	  
 	 <div class="column is-flex is-justify-content-center is-align-items-center is-half-tablet" style="min-height: 300px; background-color: #E56399; ">
-	    <h2 class="has-text-white">Some Other Big News</h2>
+	    <h2 class="has-text-white">I'm on GIT HUB</h2>
 	 </div>	
 </section> 
 
