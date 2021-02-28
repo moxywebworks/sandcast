@@ -322,10 +322,6 @@ like desktops. CSS Grid starts working its magic here so you
 can start to have fun with your layout(s).
 
 ******************************************************************/
-h2 {
-  border: 3px solid green !important;
-}
-
 .cd-section {
   background-size: cover;
   background-repeat: no-repeat;
@@ -348,7 +344,7 @@ h2 {
 
 /* backgrounds */
 .cd-section:nth-child(1) {
-  background-image: url("/library/images/bg/aaron-burden-5AiWn2U10cw-unsplash.jpg");
+  background-image: url("../images/bg/aaron-burden-5AiWn2U10cw-unsplash.jpg");
 }
 
 .cd-section:nth-child(2) {
@@ -357,7 +353,7 @@ h2 {
 }
 
 .cd-section:nth-child(3) {
-  background-image: url("/library/images/bg/daiga-ellaby-YnNczu62rdk-unsplash.jpg");
+  background-image: url("../images/bg/daiga-ellaby-YnNczu62rdk-unsplash.jpg");
 }
 
 .cd-section:nth-child(4) {

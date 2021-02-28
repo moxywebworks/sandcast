@@ -1298,10 +1298,6 @@ you can add resource intensive styles.
   can start to have fun with your layout(s).
 
   ******************************************************************/
-  h2 {
-    border: 3px solid green !important;
-  }
-
   .cd-section {
     background-size: cover;
     background-repeat: no-repeat;
@@ -1324,7 +1320,7 @@ you can add resource intensive styles.
 
   /* backgrounds */
   .cd-section:nth-child(1) {
-    background-image: url("/library/images/bg/aaron-burden-5AiWn2U10cw-unsplash.jpg");
+    background-image: url("../images/bg/aaron-burden-5AiWn2U10cw-unsplash.jpg");
   }
 
   .cd-section:nth-child(2) {
@@ -1333,7 +1329,7 @@ you can add resource intensive styles.
   }
 
   .cd-section:nth-child(3) {
-    background-image: url("/library/images/bg/daiga-ellaby-YnNczu62rdk-unsplash.jpg");
+    background-image: url("../images/bg/daiga-ellaby-YnNczu62rdk-unsplash.jpg");
   }
 
   .cd-section:nth-child(4) {
