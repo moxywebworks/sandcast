@@ -44,7 +44,7 @@
 	<section class="cd-section cd-section--bg-fixed">
 		<div class="container">
 			<div class="">
-				<h3 class="has-text-primary-light" data-aos="fade-up">A Winter's Tale</h3>
+				<h3 class="has-text-primary-light" data-aos="fade-up">This uses AOS Animations</h3>
 			</div>
 		</div>
 	</section>
