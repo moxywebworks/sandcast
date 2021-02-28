@@ -1298,6 +1298,10 @@ you can add resource intensive styles.
   can start to have fun with your layout(s).
 
   ******************************************************************/
+  h2 {
+    border: 3px solid red !important;
+  }
+
   .cd-section {
     background-size: cover;
     background-repeat: no-repeat;

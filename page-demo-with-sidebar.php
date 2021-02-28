@@ -15,7 +15,7 @@
   <div class="hero-body" id="hero-home">
 	<div class="">  
 	    <h2 class="title">
-	      Primary Hero
+	      Primary Hero Now
 	    </p>
 	    <h3 class="subtitle">
 	      Primary subtitle
