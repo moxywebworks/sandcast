@@ -36,15 +36,11 @@
 
 
 
-
-
-
-
 <div id="demo-bg-static-bg-container" class="demo" style="margin-top: -12px;">
 	<section class="cd-section cd-section--bg-fixed">
 		<div class="container">
 			<div class="">
-				<h3 class="has-text-primary-light" data-aos="fade-up">This uses AOS Animations</h3>
+				<h3 class="has-text-primary-light" data-aos="fade-up">A Winter Scene</h3>
 			</div>
 		</div>
 	</section>
