@@ -9,12 +9,12 @@
   ],
   "creatorBuild" : "34018",
   "files" : {
-    "\/.github\/FUNDING.yml" : {
+    "\/.gitignore" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/.github\/FUNDING.yml",
+      "oAP" : "\/.gitignore",
       "oF" : 0
     },
     "\/404.php" : {
@@ -19034,7 +19034,7 @@
       "ft" : 2,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/library\/mybulma\/node_modules\/bulma\/sass\/css\/derived-variables.css",
+      "oAP" : "\/library\/moxy-bulma\/node_modules\/bulma\/sass\/css\/derived-variables.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -19062,7 +19062,7 @@
       "ft" : 2,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/library\/mybulma\/node_modules\/bulma\/sass\/css\/functions.css",
+      "oAP" : "\/library\/moxy-bulma\/node_modules\/bulma\/sass\/css\/functions.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -19076,7 +19076,7 @@
       "ft" : 2,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/library\/mybulma\/node_modules\/bulma\/sass\/css\/initial-variables.css",
+      "oAP" : "\/library\/moxy-bulma\/node_modules\/bulma\/sass\/css\/initial-variables.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -19723,41 +19723,6 @@
       "oAP" : "\/page.php",
       "oF" : 0
     },
-    "\/readme.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/readme.html",
-      "oF" : 0
-    },
-    "\/readme.md" : {
-      "cB" : 0,
-      "cS" : 0,
-      "eF" : 1,
-      "eL" : 1,
-      "ema" : 1,
-      "eSQ" : 1,
-      "ft" : 4096,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/readme.html",
-      "oF" : 0,
-      "oFM" : 0,
-      "oS" : 0,
-      "pHT" : 0,
-      "pME" : 1,
-      "rFN" : 0,
-      "uCM" : 0
-    },
-    "\/readme.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/readme.txt",
-      "oF" : 0
-    },
     "\/screenshot.ai" : {
       "cB" : 0,
       "ft" : 8192,
@@ -19984,7 +19949,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 636152117.07569003,
-    "displayValue" : "sandcast-orig",
+    "displayValue" : "sandcast",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_teal",
     "iconImageWasSetByUser" : 0

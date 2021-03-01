@@ -203,4 +203,8 @@ $(function(){
     });
 });
 
+//fix for admin bar
+    if ($('#wpadminbar')[0])
+        $('body').css('top', '32px')
+
 }); /* end of as page load scripts */
