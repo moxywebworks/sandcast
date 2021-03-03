@@ -1178,7 +1178,7 @@ function plate_add_dashboard_widgets() {
     // Call the built-in dashboard widget function with our callback
     wp_add_dashboard_widget(
         'plate_dashboard_widget', // Widget slug. Also the HTML id for styling in admin.scss.
-        __( 'Welcome to Plate!', 'platetheme' ), // Title.
+        __( 'Welcome to Sandcast', 'platetheme' ), // Title.
         'plate_dashboard_widget_init' // Display function (below)
     );
 }
@@ -1189,15 +1189,12 @@ function plate_dashboard_widget_init() {
 
     // helper vars for links and images and stuffs.
     $url = get_admin_url();
-    $img = get_theme_file_uri() . '/library/images/logo.svg';
+    $img = get_theme_file_uri() . '/library/images/moxy-wordmark.svg';
 
-    echo '<div class="dashboard-image"><img src=' . $img . '" width="96" height="96" /></div>';
-    echo '<h3>You\'ve arrived at the WordPress Dashboard aka the \'Site Admin\' or \'WordPress Admin\' or simply the \'Admin\'.</h3>'; 
-    echo '<p><strong>Thank you for using the <a href="https://github.com/joshuaiz/plate" target="_blank">Plate</a> theme by <a href="https://studio.bio/" target="_blank">studio.bio</a>!</strong></p>'; 
-    echo '<p>You can add your own message(s) or HTML here. Edit the <code>plate_dashboard_widget_init()</code> function in <code>functions.php</code> at line 1225. Styles are in <code>admin.scss</code>. Or if you don\'t want or need this, just delete the function. Have it your way.</p>';
-    echo '<p>This is a great place for site instructions, links to help or resources, and to add your contact info for clients.</p>';
-    echo '<p>Make sure to remind them about the <code>Screen Options</code> tab on the top right. Often clients do not know about that and that they can show or hide or rearrange these Dashboard Widgets or show/hide boxes on any edit screen.</p>';
-    
+    echo '<div class="dashboard-image"><img src=' . $img . '" width="177" height="53" /></div>';
+    echo '<h3><strong>Sandcast</strong> is boilerplate theme being developed for the internal use of Moxy Webworks.</h3>'; 
+    echo '<p>It is a Casting Flask, like those used in the traditional process of sand casting. Liquid alloys were poured into molds and formed into shapes and tools. That\'s exactly what we\'re doing here!</p>';
+    echo '<p>The database at moxyinc.ca is considered the Single Sourse of Truth. Pull the db from there as needed.</p>';
 }
 
 // Add in the Bulma Navwalker by https://www.worldoweb.co.uk/2018/wordpress-bulma-navwalker-font-awesome-support
