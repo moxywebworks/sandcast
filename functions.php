@@ -1194,7 +1194,7 @@ function plate_dashboard_widget_init() {
     echo '<div class="dashboard-image"><img src=' . $img . '" width="177" height="53" /></div>';
     echo '<h3><strong>Sandcast</strong> is boilerplate theme being developed for the internal use of Moxy Webworks.</h3>'; 
     echo '<p>It is a Casting Flask, like those used in the traditional process of sand casting. Liquid alloys were poured into molds and formed into shapes and tools. That\'s exactly what we\'re doing here!</p>';
-    echo '<p>The database at moxyinc.ca is considered the Single Sourse of Truth. Pull the db from there as needed.</p>';
+    echo '<p>The database at moxyinc.ca is considered the Single Source of Truth. Pull the db from there as needed.</p>';
 }
 
 // Add in the Bulma Navwalker by https://www.worldoweb.co.uk/2018/wordpress-bulma-navwalker-font-awesome-support
