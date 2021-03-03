@@ -13,15 +13,7 @@ those viewpoints.
 
 ******************************************************************/
 
-
-#hero-home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  h2 { font-size: 3em; text-align: center; }
-  h3 { font-size: 2em; text-align: center; }
-}
+nav svg, .menu-item i { margin-right: 4px; }
 
 /*********************
 GLOBAL STYLES
@@ -32,10 +24,10 @@ html {
 }
 
 body {
-    color: #333333;
+    //color: #333333;
     font-size: 100%;
     font-family: $family-sans-serif;
-    line-height: 1.5;
+    //line-height: 1.5;
 
     // Adjust for your type
     -webkit-font-smoothing: antialiased;
@@ -43,10 +35,10 @@ body {
 }
 
 img {
-    display: block; // removes added default margin
+    // display: block; // removes added default margin
     // responsive images by default
-    max-width: 100%;
-    height: auto;
+    // max-width: 100%;
+    // height: auto;
 }
 
 pre {
@@ -73,10 +65,10 @@ LINK STYLES
 *********************/
 
 a, a:visited {
-    text-decoration: none;
+    // text-decoration: none;
     /* on hover */
     &:hover, &:focus {
-        text-decoration: underline;
+        // text-decoration: underline;
     }
 
     /* on click */
@@ -89,7 +81,7 @@ a, a:visited {
         so it basically works like the :hover selector
         for mobile devices.
         */
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+        // -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -121,7 +113,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     text-rendering: optimizelegibility;
     // line-height: 1.2; capital letter width: 0.7
     // change for your typeface.
-    @include lhCrop(1.2, 0.7); 
+    // @include lhCrop(1.2, 0.7); 
 
     /*
     if you're going to use webfonts, be sure to check your weights
@@ -175,7 +167,7 @@ HEADER STYLES
 
 // fix for new header.php schema layout
 #inner-header {
-    display: flex; 
+    //display: flex; 
 }
 
 #site-title {
@@ -192,13 +184,14 @@ HEADER STYLES
 }
 
 #logo {
-    margin-right: 8px;
+    
     img {
         // replace /library/images/logo.svg and adjust for your logo size
-        width: 150px;
-       // height: 45px;
+        
     }
 }
+header #logo img{width:150px; height: 45px; margin: 20px 0 0 0; }
+ //header.fixed-header #logo img{width:100px; height: 30px; margin: 16px 0 0 0;}
 
 /*********************
 LIST STYLES

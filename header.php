@@ -31,7 +31,7 @@
         <![endif]-->
 
         <!-- Apple Touch Icon -->
-        <link rel="apple-touch-icon" href="<?php echo get_theme_file_uri(); ?>/library/images/apple-touch-icon.png">
+        <!-- <link rel="apple-touch-icon" href="<?php echo get_theme_file_uri(); ?>/library/images/apple-touch-icon.png"> -->
         
         <!-- Font Awesome 5 -->
         <script src="https://kit.fontawesome.com/d9902ceb2d.js" crossorigin="anonymous"></script>
@@ -55,73 +55,60 @@
 
 	<body <?php body_class(); ?> itemscope itemtype="https://schema.org/WebPage">
 
-        <?php // remove grid classes below if you aren't using CSS Grid (but you should) ?>
-		<div id="container" class="">
-
 			<header class="header" id="header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
 
                 <div id="inner-header" class="container">
 
-                    <?php // updated with proper markup and wrapping div for organization ?>
-                    <div id="bloginfo" itemscope itemtype="https://schema.org/Organization">
-
-                        <?php 
-                        /*
-                        * You can use text or a logo (or both) in your header. If you use both, 
-                        * try placing them in a single link element for better accessibility.
-                        */
-                        ?>
-                        <?php if (has_custom_logo()) { ?>
-
-                            <div id="logo" itemprop="logo">
-                                <a href="<?php echo home_url(); ?>" rel="nofollow" itemprop="url" title="<?php bloginfo('name'); ?>"><?php the_custom_logo(); ?></a>
-                            </div>
-
-<!--
-                            <div id="site-title" class="site-title" itemprop="name">
-                                <a href="<?php echo home_url(); ?>" rel="nofollow" itemprop="url" title="<?php bloginfo('name'); ?>">
-                                    <?php bloginfo('name'); ?>
-                                </a>
-                            </div>
--->
-                            
-                        <?php } else { ?>
-
-                            <div id="logo" itemprop="logo">
-                                <a href="<?php echo home_url(); ?>" rel="nofollow" itemprop="url" title="<?php bloginfo('name'); ?>">
-                                    <img src="<?php echo get_theme_file_uri(); ?>/library/images/logo.svg" itemprop="logo" alt="site logo" />
-                                </a>
-                            </div>
-
-                            <div id="site-title" class="site-title" itemprop="name">
-                                <a href="<?php echo home_url(); ?>" rel="nofollow" itemprop="url" title="<?php bloginfo('name'); ?>">
-                                    <?php bloginfo('name'); ?>
-                                </a>
-                            </div>
-
-                        <?php } ?>
-                        
-                    </div>
-
-                    <nav class="header-nav primary-menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement" aria-label="<?php _e( 'Primary Menu ', 'platetheme' ); ?>">
-
-                        <?php // added primary menu marker for accessibility ?>
-                        <h2 class="screen-reader-text"><?php _e( 'Primary Menu', 'platetheme' ); ?></h2>
-
-                        <?php // see all default args here: https://developer.wordpress.org/reference/functions/wp_nav_menu/ ?>
-
-                        <?php wp_nav_menu( array(
-
-                            'container' => false,                          // remove nav container
-                            'container_class' => 'menu',                   // class of container (should you choose to use it)
-                            'menu' => __( 'The Main Menu', 'platetheme' ), // nav name
-                            'menu_class' => 'nav top-nav main-menu',       // adding custom nav class
-                            'theme_location' => 'main-nav',                // where it's located in the theme
-
-                            )
-                        ); ?>
-
-                    </nav>
+					<nav class="navbar" aria-label="main navigation">
+						<div id="logo" class="navbar-brand">
+						  
+						<?php if (has_custom_logo()) { ?>
+							<a class="navbar-item" href="<?php echo home_url(); ?>" rel="nofollow" itemprop="url" title="<?php bloginfo('name'); ?>">
+								<?php the_custom_logo(); ?>
+							</a>
+						<?php } else { ?>
+							<a class="navbar-item"  href="<?php echo home_url(); ?>" rel="nofollow" itemprop="url" title="<?php bloginfo('name'); ?>">
+						        <img src="<?php echo get_theme_file_uri(); ?>/library/images/logo.svg" itemprop="logo" alt="site logo" />
+							</a>
+						<?php } ?>
+						
+							<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+							  <span aria-hidden="true"></span>
+							  <span aria-hidden="true"></span>
+							  <span aria-hidden="true"></span>
+							</a>
+						</div>
+					
+						<div id="primary-menu" class="navbar-menu">
+							<div class="navbar-start">
+								<?php wp_nav_menu(array(
+									'theme-location'	=> 'main-nav',
+									'depth'				=>	3,
+									'menu'				=>	'NewNav',
+									'container'			=>	'',
+									'menu_class'		=>	'',
+									'items_wrap'		=>	'%3$s',
+									'walker'			=>	new Bulma_NavWalker(),
+									'fallback_cb'		=>	'Bulma_NavWalker::fallback'
+								));
+								?>
+						 	</div>
+						 	
+						 	<?php // remove this next div if you don't require it ?>
+							<div class="navbar-end">
+							     <div class="navbar-item">
+							        <div class="buttons">
+										<a class="button is-warning">
+							           		 <strong>Buy Tickets by Phone</strong>
+							          	</a>
+							          	<a class="button is-success">
+							            	<strong>Buy Tickets Online</strong>
+							            </a>
+							        </div>
+								</div>
+							</div>
+						</div>
+					</nav>
 
                 </div>
 

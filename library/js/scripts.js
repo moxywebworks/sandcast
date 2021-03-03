@@ -194,7 +194,7 @@ AOS.init({
 // Fixed Header Helper
 $(function(){
     $(window).scroll(function(){
-        if($(this).scrollTop() > 100){
+        if($(this).scrollTop() > 200){
             $('header').addClass('fixed-header');
         }
         else{
@@ -206,5 +206,19 @@ $(function(){
 //fix for admin bar
     if ($('#wpadminbar')[0])
         $('header').css('top', '32px')
+        
+
+
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function() {
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
+
+  });
+        
+        
+        
 
 }); /* end of as page load scripts */

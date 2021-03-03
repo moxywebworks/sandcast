@@ -295,7 +295,7 @@ Use this to add Google or other web fonts.
  add_action( 'wp_enqueue_scripts', 'plate_fonts' );
  function plate_fonts() {
 
-     wp_enqueue_style( 'plate-fonts', '//fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap' );
+     wp_enqueue_style( 'plate-fonts', '//fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap' );
 
  }
 
@@ -433,7 +433,7 @@ function plate_scripts_and_styles() {
     if ( !is_admin() ) {
 
         // modernizr (3.6.0 2018-04-17)
-        wp_enqueue_script( 'modernizr', get_theme_file_uri() . '/library/js/libs/modernizr-custom-min.js', array(), '3.6.0', false );
+       // wp_enqueue_script( 'modernizr', get_theme_file_uri() . '/library/js/libs/modernizr-custom-min.js', array(), '3.6.0', false );
 
 		// register BULMA stylesheet
         wp_enqueue_style( 'bulma-stylesheet', get_theme_file_uri() . '/library/moxy-bulma/css/mystyles.css', array(), '', 'all' );
@@ -469,6 +469,10 @@ function plate_scripts_and_styles() {
 
     }
 }
+
+
+
+
 
 /*********************
 GUTENBERG ENQUEUES
@@ -1196,6 +1200,7 @@ function plate_dashboard_widget_init() {
     
 }
 
-
+// Add in the Bulma Navwalker by https://www.worldoweb.co.uk/2018/wordpress-bulma-navwalker-font-awesome-support
+require_once('library/moxy-bulma/bulma-navwalker.php');
 
 ?>

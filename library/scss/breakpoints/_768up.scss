@@ -99,13 +99,15 @@ HEADER STYLES
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0;
-	padding: 20px 0;
+	padding: 0; transition: 1000ms ease-in-out;
 	
-	&.fixed-header{box-shadow: 20px 4px 10px rgba(39, 59, 69, 0.2);}
+	&.fixed-header{box-shadow: 20px 4px 10px rgba(39, 59, 69, 0.2); padding: 0 0 0 0; transition: 678ms ease-in-out; }
 }
 
-header #logo img{width:150px; transition: all linear .3s}
-header.fixed-header #logo img{width:100px;}
+header #logo img{width:150px; height: 45px; transition: 678ms ease-in-out; margin: 16px 0 10px; }
+ header.fixed-header #logo img{width:100px; height: 30px; margin: 16px 0 0 0;}
+// header.fixed-header #logo img{ transform: scale(.75); }
+
 
 
 .header {

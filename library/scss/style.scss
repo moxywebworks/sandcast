@@ -28,7 +28,7 @@ the whole project.
 *********************/
 
 // normalize: http://necolas.github.io/normalize.css/
-@import "partials/normalize";
+//@import "partials/normalize";
 
 // Sass variables
 @import "partials/variables";
@@ -165,10 +165,10 @@ tablets. You probably won't need to add too much to this stylesheet.
 If you're not using it, delete it.
 *********************/
 
-@media only screen and (min-width: 900px) {
-    // styles in 900up.scss
-    @import "breakpoints/900up";
-}
+// @media only screen and (min-width: 900px) {
+//     // styles in 900up.scss
+//     @import "breakpoints/900up";
+// }
 
 /*********************
 DESKTOP
