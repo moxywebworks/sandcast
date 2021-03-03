@@ -196,12 +196,31 @@ $(function(){
     $(window).scroll(function(){
         if($(this).scrollTop() > 200){
             $('header').addClass('fixed-header');
+            $('body').addClass('fixed-header');
         }
         else{
             $('header').removeClass('fixed-header');
+            $('body').removeClass('fixed-header');
         }
     });
 });
+
+// add header height as body top padding
+
+// var setHeight = function() {
+//   var top = $('header').outerHeight();
+//   $('body').css({'padding-top': top + 'px'});
+// }
+// 
+// $(window).load(function() {
+//   //On load you can be sure that the target element has been loaded 
+//   //(except if it is loaded from an ajax call)
+//   setHeight();
+// });
+// 
+// $(window).resize(function() {
+//   setHeight();
+// });
 
 //fix for admin bar
     if ($('#wpadminbar')[0])

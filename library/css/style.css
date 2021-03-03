@@ -367,6 +367,10 @@ nav svg, .menu-item i {
   margin-right: 4px;
 }
 
+.hero.is-fullheight {
+  border: 3px solid red;
+}
+
 /*********************
 GLOBAL STYLES
 *********************/
