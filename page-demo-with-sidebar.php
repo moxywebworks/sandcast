@@ -127,7 +127,7 @@
 
     <section class="columns">
 	
-	<div class="column is-three-quarters">
+	<div class="column">
 
 			<main id="main" class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="https://schema.org/Blog">				
 
@@ -149,7 +149,7 @@
 		</div>
 
 	
-	 <?php get_sidebar(); ?>
+	 <?php // get_sidebar(); ?>
 	 
 
 
