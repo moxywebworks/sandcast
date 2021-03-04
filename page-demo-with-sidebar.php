@@ -11,7 +11,7 @@
 <?php get_header(); ?> 
 
 <!-- Start Hero Carousel -->
-<section class="hero is-large has-carousel">
+<section class="hero is-medium has-carousel">
 	<div id="carousel" class="hero-carousel">
 		<div class="item-1 slide is-flex is-justify-content-center is-align-items-center">
 			<h1 class="is-primary">We've been patiently waiting...</h1>
@@ -53,7 +53,6 @@
 		 </div>	
 	</div> 
 </section>
-
 
 
 <div id="demo-bg-static-bg-container" class="demo">

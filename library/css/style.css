@@ -84,10 +84,6 @@ http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
   transform: translate(-50%, -50%);
 }
 
-.foo-parent {
-  position: relative;
-}
-
 /*********************
 TINTS/SHADES
 https://css-tricks.com/snippets/sass/tint-shade-functions/
@@ -157,22 +153,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     }
 */
 /*! @creativebulma/bulma-divider v1.1.0 | (c) 2020 Gaetan | MIT License | https://github.com/CreativeBulma/bulma-divider */
-@-webkit-keyframes spinAround {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-@keyframes spinAround {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
 /* line 17, src/sass/app.sass */
 .divider {
   position: relative;
@@ -240,9 +220,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 /* line 72, src/sass/app.sass */
-.divider.is-white::after, .divider.is-white::before {
-  background-color: white;
-}
 
 /* line 72, src/sass/app.sass */
 .divider.is-black::after, .divider.is-black::before {
@@ -364,7 +341,7 @@ those viewpoints.
 
 ******************************************************************/
 nav svg, .menu-item i {
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 /*********************
@@ -483,10 +460,6 @@ HEADER STYLES
   color: #303030;
 }
 
-#bloginfo {
-  display: flex;
-}
-
 header #logo img {
   width: 150px;
   height: 45px;
@@ -498,32 +471,6 @@ LIST STYLES
 *********************/
 ul, ol {
   -webkit-padding-start: 20px;
-}
-
-.list-square {
-  margin-bottom: 1.5em;
-  list-style-position: outside;
-  list-style-type: square;
-}
-
-.nostyle {
-  margin-left: 0;
-  padding-left: 0;
-  list-style-type: none;
-}
-
-.related-posts-list {
-  display: flex;
-}
-
-.page-numbers {
-  margin: 1em 0;
-  padding-left: 0;
-  list-style-type: none;
-  display: flex;
-}
-.page-numbers li {
-  margin-right: 1em;
 }
 
 /*********************
@@ -554,26 +501,6 @@ that you don't conflict with other classes. That's what
 the cool kids do.
 
 */
-.error404 .search-outer {
-  padding: 1.5em 0;
-}
-.error404 .search-input {
-  display: flex;
-  width: 100%;
-}
-.error404 input[type=search] {
-  margin: 0 1em 0 0;
-  height: 40px;
-  min-width: 250px;
-}
-.error404 .search-submit {
-  width: 100px;
-}
-
-.page-blog .entry-content .alignfull, .page-blog .entry-content .alignwide {
-  margin: 0;
-  max-width: 100%;
-}
 
 /**
  * put all your custom page classes here  
@@ -622,9 +549,6 @@ POSTS & CONTENT STYLES
   border-right: 0;
 }
 /* end .entry-content */
-.wp-caption {
-  /* images inside wp-caption */
-}
 /* end .wp-caption */
 /* image gallery styles */
 /* end .gallery */
@@ -634,56 +558,18 @@ POSTS & CONTENT STYLES
 SCREEN READER STYLES
 ******************************************************************/
 /* Text meant only for screen readers. */
-.screen-reader-text {
-  position: absolute !important;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-  width: 1px;
-  height: 1px;
-  white-space: nowrap;
-}
-
-.screen-reader-text:focus {
-  top: 5px;
-  left: 5px;
-  z-index: 100000;
-  /* Above WP toolbar. */
-  display: block;
-  clip: auto !important;
-  padding: 15px 23px 14px;
-  width: auto;
-  height: auto;
-  border-radius: 3px;
-  background-color: #f1f1f1;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  color: #21759b;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 0.875rem;
-  font-size: 14px;
-  line-height: normal;
-}
 
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
 /* end plate_page_navi */
 /* fallback previous & next links */
-.wp-prev-next .prev-link {
-  float: left;
-}
-.wp-prev-next .next-link {
-  float: right;
-}
 
 /* end .wp-prev-next */
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-#comments-title {
-  /* number of comments span */
-}
 .commentlist {
   margin: 0;
   list-style-type: none;
@@ -698,10 +584,6 @@ COMMENT STYLES
   /* end children */
   /* general comment classes */
 }
-.comment .comment-author {
-  display: flex;
-  align-items: center;
-}
 .comment .vcard .avatar {
   margin-right: 1rem;
 }
@@ -715,9 +597,6 @@ COMMENT STYLES
 /* comment reply link */
 /* end .commentlist .comment-reply-link */
 /* edit comment link */
-.comment-edit-link {
-  margin-right: 6px;
-}
 
 /**********************
 COMMENT FORM STYLES
@@ -794,30 +673,6 @@ tweeners.
   .entry-content {
     /* at this larger size, we can start to align images */
   }
-  .entry-content .alignleft, .entry-content img.alignleft {
-    margin-right: 1.5em;
-    display: inline;
-    float: left;
-    margin-top: 11px;
-  }
-  .entry-content .alignright, .entry-content img.alignright {
-    margin-left: 1.5em;
-    display: inline;
-    float: right;
-    margin-top: 11px;
-  }
-  .entry-content .aligncenter, .entry-content img.aligncenter {
-    margin-right: auto;
-    margin-left: auto;
-    display: table;
-    clear: both;
-    margin-top: 11px;
-  }
-  .entry-content .wp-block-media-text.alignfull {
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
 
   /* end .entry-content */
   /*********************
@@ -876,7 +731,7 @@ compete with the base styles.
     padding: 0.2em;
     text-decoration: none;
   }
-  .nav li ul.sub-menu li a,
+  
 .nav li ul.children li a {
     padding-left: 30px;
   }
@@ -891,7 +746,7 @@ you can add resource intensive styles.
 @media only screen and (min-width: 768px) {
   /******************************************************************
   Site Name:
-  Author:
+  Author: MOXY WEBWORKS
 
   Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -960,22 +815,6 @@ you can add resource intensive styles.
   /*********************
   GLOBAL STYLES
   *********************/
-  .entry-content .alignfull {
-    margin-left: calc( -100vw / 2 + 100% / 2 );
-    margin-right: calc( -100vw / 2 + 100% / 2 );
-    max-width: 100vw;
-  }
-  .entry-content .alignwide {
-    margin-right: calc(25% - 25vw);
-    margin-left: calc(25% - 25vw);
-    max-width: 1000%;
-    width: auto;
-  }
-  .entry-content .alignwide img,
-.entry-content .alignfull img {
-    display: block;
-    margin: 0 auto;
-  }
 
   /*********************
   LAYOUT & GRID STYLES
@@ -1017,10 +856,6 @@ you can add resource intensive styles.
   /*********************
   NAVIGATION STYLES
   *********************/
-  .header-nav {
-    display: flex;
-    align-items: center;
-  }
 
   .nav {
     margin: 0;
@@ -1052,14 +887,14 @@ you can add resource intensive styles.
   .nav li a:hover, .nav li a:focus {
     text-decoration: underline;
   }
-  .nav li ul.sub-menu,
+  
 .nav li ul.children {
     position: absolute;
     z-index: 8999;
     visibility: hidden;
     /* highlight sub-menu current page */
   }
-  .nav li ul.sub-menu li,
+  
 .nav li ul.children li {
     /*
     if you need to go deeper, go nuts
@@ -1067,7 +902,7 @@ you can add resource intensive styles.
     for usability. k, bai.
     */
   }
-  .nav li ul.sub-menu li:last-child a,
+  
 .nav li ul.children li:last-child a {
     border-bottom: 0;
   }
@@ -1084,11 +919,6 @@ you can add resource intensive styles.
   We like having these classes for use in iPad and larger devices
   so we've copied them here.
   */
-  .single-full #main {
-    max-width: 640px;
-    float: none;
-    margin: 0 auto;
-  }
 
   /*********************
   SIDEBARS & ASIDES
@@ -1121,13 +951,6 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  .footer-links ul li {
-    /*
-    be careful with the depth of your menus.
-    it's very rare to have multi-depth menus in
-    the footer.
-    */
-  }
   /* end .footer-links */
 }
 @media only screen and (max-width: 899px) {
@@ -1300,10 +1123,6 @@ be set to display none.
     page-break-inside: avoid;
   }
 
-  blockquote {
-    page-break-inside: avoid;
-  }
-
   h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
     page-break-inside: avoid;
@@ -1322,7 +1141,7 @@ be set to display none.
     page-break-before: avoid;
   }
 
-  pre, blockquote {
+  pre {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
@@ -1344,10 +1163,6 @@ be set to display none.
     content: " < " attr(href) "> ";
   }
 
-  article a[href^="#"]:after {
-    content: "";
-  }
-
   a:not(:local-link):after {
     content: " < " attr(href) "> ";
   }
@@ -1355,7 +1170,7 @@ be set to display none.
   /**
   * Making intergated videos disappear, and removing the iframes' whitespace to zero. 
   */
-  .entry-content iframe, ins {
+  .entry-content iframe {
     display: none;
     width: 0 !important;
     height: 0 !important;
@@ -1364,20 +1179,11 @@ be set to display none.
     white-space: nowrap;
   }
 
-  .embed-youtube, .embed-responsive, .embed-container {
-    display: none;
-    position: absolute;
-    height: 0;
-    overflow: hidden;
-  }
-
   /* Hiding unnecessary elements for the print */
-  #header-widgets, nav, aside,
-.sidebar, .content-ads, .make-comment, .author-bio,
-.heading, .related-posts, #decomments-form-add-comment,
-#breadcrumbs, #footer, .post-byline, .byline, .meta-single,
-.site-title img, .post-tags, .readability, .sidebar, .page-navigation, .wp-prev-next,
-.respond-form {
+   nav,
+.heading,
+#breadcrumbs, #footer, .byline,
+.site-title img, .readability {
     display: none;
   }
 }

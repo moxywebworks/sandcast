@@ -88,10 +88,10 @@
 							<div class="navbar-end">
 							     <div class="navbar-item">
 							        <div class="buttons">
-										<a class="button is-warning">
+										<a class="button is-small is-warning">
 							           		 <strong>Buy Tickets by Phone</strong>
 							          	</a>
-							          	<a class="button is-success">
+							          	<a class="button is-small is-success">
 							            	<strong>Buy Tickets Online</strong>
 							            </a>
 							        </div>
