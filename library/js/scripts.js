@@ -207,20 +207,21 @@ $(function(){
 
 // add header height as body top padding
 
-// var setHeight = function() {
-//   var top = $('header').outerHeight();
-//   $('body').css({'padding-top': top + 'px'});
-// }
-// 
-// $(window).load(function() {
-//   //On load you can be sure that the target element has been loaded 
-//   //(except if it is loaded from an ajax call)
-//   setHeight();
-// });
-// 
-// $(window).resize(function() {
-//   setHeight();
-// });
+var setHeight = function() {
+  var top = $('header').outerHeight();
+  var windowHeight = $(window).height();
+ $('.hero.is-fullheight').css({'min-height': windowHeight - top + 'px' });
+}
+
+$(window).load(function() {
+  //On load you can be sure that the target element has been loaded 
+  //(except if it is loaded from an ajax call)
+  setHeight();
+});
+
+$(window).resize(function() {
+  setHeight();
+});
 
 //fix for admin bar
     if ($('#wpadminbar')[0])
@@ -237,7 +238,19 @@ $(function(){
 
   });
         
-        
+ // Intialize the Slick Carousel
+bulmaCarousel.attach('#carousel', {
+				slidesToScroll: 1,
+				slidesToShow: 1,
+				loop: true,
+				navigationKeys: true,
+				infinite: false,
+				autoplay: true,
+				autoplaySpeed: 6000,
+				pauseOnHover: false,
+				effect: 'fade',
+				duration: 2000
+			});      
         
 
 }); /* end of as page load scripts */

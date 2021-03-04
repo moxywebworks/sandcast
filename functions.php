@@ -441,8 +441,12 @@ function plate_scripts_and_styles() {
         // register AOS Animations stylesheet: https://michalsnik.github.io/aos/
         wp_enqueue_style( 'aos-stylesheet', get_theme_file_uri() . '/library/moxy-aos/dist/aos.css', array(), '', 'all' );
         
-        // register AOS Animations stylesheet: https://michalsnik.github.io/aos/
+        // register Font Awesome stylesheet: 
         wp_enqueue_style( 'fa5-stylesheet', get_theme_file_uri() . '/library/fontawesome-5/css/all.min.css', array(), '', 'all' );
+        
+        // register Bulma Carousel stylesheet: https://kenwheeler.github.io/slick/
+        wp_enqueue_style( 'bulma-carousel-stylesheet', get_theme_file_uri() . '/library/bulma-carousel/dist/css/bulma-carousel.min.css', array(), '', 'all' );
+      
 
         // register main stylesheet
         wp_enqueue_style( 'plate-stylesheet', get_theme_file_uri() . '/library/css/style.css', array(), '', 'all' );
@@ -455,6 +459,9 @@ function plate_scripts_and_styles() {
         
         // adding aos in the footer
         wp_enqueue_script( 'aos-js', get_theme_file_uri() . '/library/moxy-aos/dist/aos.js', array( 'jquery' ), '', true );
+        
+        // adding Bulma Carousel in the footer
+        wp_enqueue_script( 'bulma-carousel-js', get_theme_file_uri() . '/library/bulma-carousel/dist/js/bulma-carousel.min.js', array( 'jquery' ), '', true );
         
         // adding scripts file in the footer
         wp_enqueue_script( 'plate-js', get_theme_file_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );

@@ -9,8 +9,27 @@
 ?>
 
 <?php get_header(); ?> 
+
+<!-- Start Hero Carousel -->
+<section class="hero is-large has-carousel">
+	<div id="carousel" class="hero-carousel">
+		<div class="item-1 slide is-flex is-justify-content-center is-align-items-center">
+			<h1 class="is-primary">We've been patiently waiting...</h1>
+		</div>
+		<div class="item-2 slide is-flex is-justify-content-center is-align-items-center">
+			<h1 class="has-text-white">making plans...</h1>
+		</div>
+		<div class="item-3 slide is-flex is-justify-content-center is-align-items-center">
+			<h1 class="has-text-white">to return to our stage!</h1>
+		</div>
+	</div>
+	<div class="hero-head"></div>
+	<div class="hero-body"></div>
+	<div class="hero-foot"></div>
+</section>
+<!-- End Hero Carousel -->
     
-<section class="hero is-primary is-medium">
+<section class="hero is-primary is-fullheight">
   <div class="hero-body">
 	<div class="container has-text-centered">  
 	    <h2 class="title">

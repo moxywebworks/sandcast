@@ -322,6 +322,23 @@ like desktops. CSS Grid starts working its magic here so you
 can start to have fun with your layout(s).
 
 ******************************************************************/
+#carousel .item-1 {
+  background-image: url("../images/photo-1573421708341-9faa272865d1.jpg");
+}
+#carousel .item-2 {
+  background-image: url("../images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
+}
+#carousel .item-3 {
+  background-image: url("../images/kyle-head-p6rNTdAPbuk-unsplash.jpg");
+}
+
+.slide {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
 .cd-section {
   background-size: cover;
   background-repeat: no-repeat;
