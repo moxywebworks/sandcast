@@ -939,7 +939,7 @@ you can add resource intensive styles.
 
   /* backgrounds */
   .cd-section:nth-child(1) {
-    background-image: url("../images/bg/aaron-burden-5AiWn2U10cw-unsplash.jpg");
+    background-image: url("../images/bg/aaron-burden-5AiWn2U10cw-unsplash.webp");
   }
 
   .cd-section:nth-child(2) {
@@ -948,7 +948,7 @@ you can add resource intensive styles.
   }
 
   .cd-section:nth-child(3) {
-    background-image: url("../images/bg/daiga-ellaby-YnNczu62rdk-unsplash.jpg");
+    background-image: url("../images/bg/daiga-ellaby-YnNczu62rdk-unsplash.webp");
   }
 
   .cd-section:nth-child(4) {
