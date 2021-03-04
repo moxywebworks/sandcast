@@ -6,6 +6,7 @@
 <!--[if gt IE 8]><!--> <html <?php html_schema(); ?> <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 
 	<head>
+	
 
         <?php // drop Google Analytics here ?>
         <?php // end analytics ?>

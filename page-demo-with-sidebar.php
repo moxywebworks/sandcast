@@ -45,11 +45,11 @@
 <section id="two-cols">
 	<div class="columns is-marginless">
 		<div class="column is-flex is-justify-content-center is-align-items-center is-half-tablet" style="min-height: 300px; background-color: pink; ">
-		    <h2 class="">Big News Here</h2>
+		    <h2 class="" data-aos="fade-right">Big News Here</h2>
 		 </div>
 		  
 		 <div class="column is-flex is-justify-content-center is-align-items-center is-half-tablet" style="min-height: 300px; background-color: #E56399; ">
-		    <h2 class="has-text-white">I'm on GIT HUB</h2>
+		    <h2 class="has-text-white" data-aos="fade-left">I'm on GIT HUB</h2>
 		 </div>	
 	</div> 
 </section>
