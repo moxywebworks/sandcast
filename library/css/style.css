@@ -367,8 +367,8 @@ nav svg, .menu-item i {
   margin-right: 6px;
 }
 
-.hero-body {
-  z-index: -1000 !important;
+.hero.has-carousel .hero-body {
+  z-index: -100 !important;
 }
 
 /*********************
