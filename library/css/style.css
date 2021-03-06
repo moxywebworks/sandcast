@@ -369,6 +369,24 @@ nav svg, .menu-item i {
 
 .hero.has-carousel .hero-body {
   z-index: -100 !important;
+  min-height: 300px;
+}
+
+#carousel .item-1 {
+  background-image: url("../images/photo-1573421708341-9faa272865d1.jpg");
+}
+#carousel .item-2 {
+  background-image: url("../images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
+}
+#carousel .item-3 {
+  background-image: url("../images/kyle-head-p6rNTdAPbuk-unsplash.jpg");
+}
+
+.slide {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 /*********************
@@ -380,7 +398,7 @@ html {
 
 body {
   font-size: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -904,6 +922,10 @@ you can add resource intensive styles.
   can start to have fun with your layout(s).
 
   ******************************************************************/
+  .hero.has-carousel .hero-body {
+    z-index: -100 !important;
+  }
+
   #carousel .item-1 {
     background-image: url("../images/photo-1573421708341-9faa272865d1.jpg");
   }

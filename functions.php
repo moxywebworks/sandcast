@@ -295,8 +295,9 @@ Use this to add Google or other web fonts.
  add_action( 'wp_enqueue_scripts', 'plate_fonts' );
  function plate_fonts() {
 
-     wp_enqueue_style( 'plate-fonts', '//fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap' );
-
+     wp_enqueue_style( 'plate-fonts', '//fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap' );
+/*      wp_enqueue_style( 'plate-fonts', '//fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap' );
+ */
  }
 
 
@@ -613,7 +614,7 @@ function plate_filter_ptags_on_images( $content ) {
 }
 
 
-// Simple function to remove the [...] from excerpt and add a 'Read More »' link.
+// Simple function to remove the [...] from excerpt and add a 'Read More ï¿½' link.
 function plate_excerpt_more($more) {
     global $post;
     // edit here if you like

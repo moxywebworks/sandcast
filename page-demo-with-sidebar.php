@@ -57,92 +57,120 @@
 
 <div id="demo-bg-static-bg-container" class="demo">
 	<section class="cd-section cd-section--bg-fixed">
-		<div class="container">
-			<div class="">
+		<div class="container has-text-centered">
+			<div class="column">
 				<h3 class="has-text-primary-light" data-aos="fade-up">A Winter Scene</h3>
 			</div>
 		</div>
 	</section>
 	
 	<section class="cd-section">
-		<div class="container">
-			<div class="" data-aos="fade-up">
-				<h3><i class="fas fa-theater-masks"></i> This is scrolling message 1!</h3>
+		<div class="container has-text-centered">
+			<div class="column">
+				<div class="" data-aos="fade-up">
+					<h3><i class="fas fa-theater-masks"></i> This is scrolling message 1!</h3>
+				</div>
 			</div>
 		</div>
 	</section>
 	
 	<section class="cd-section cd-section--bg-fixed">
-		<div class="container">
-			<div class="" data-aos="fade-up">
+		<div class="container has-text-centered">
+			<div class="column" data-aos="fade-up">
 				<h3 class="has-text-primary-light">This is scrolling message 2!</h3>
 			</div>
 		</div>
 	</section>
 	
 	<section class="cd-section">
-		<div class="container">
-			<div class="" data-aos="fade-up">
+		<div class="container has-text-centered">
+			<div class="column" data-aos="fade-up">
 				<h3>This is scrolling message 3!</h3>
 			</div>
 		</div>
 	</section>
 </div>
 
-
-
-
-
-
-
-
-
-
-<section class="container" >
-	<div class="columns" style=" margin-top: 0; ">
-	  <div class="column" style="background-color: pink;">
-	    First column
-	    
-	    <i class="fas fa-user"></i> <!-- uses solid style -->
-  <i class="far fa-user"></i> <!-- uses regular style -->
-  <!--brand icon-->
-  <i class="fab fa-github-square"></i> <!-- uses brands style -->
-	  </div>
-	  <div class="column" style="background-color: yellow;">
-	    Second column
-	  </div>
-	  <div class="column" style="background-color: grey;">
-	    Third column
-	  </div>
-<!--
-	  <div class="column" style="background-color: cornsilk;display: flex;justify-content: center;">
-	    Fourth column
-	  </div>
--->
-	</div>	
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolor doloribus esse ex expedita minus officiis voluptas. At consequuntur debitis dignissimos eum sed voluptas. Amet assumenda cupiditate earum molestias placeat.
+            </div>
+        </div>
+    </div>
 </section>
 
 
-<div class="container">
 
-    <section class="columns">
-	
-	<div class="column">
+<section class="section">
+	<div class="container">
+		<div class="columns is-marginless is-centered">
+			<div class="column has-hover-background-light">
+				First column
+			</div>
+			<div class="column has-hover-background-light">
+				Second column
+			</div>
+			<div class="column has-hover-background-light">
+				Third column
+			</div>
+		</div>	
+	</div>
+</section>
 
-			<main id="main" class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="https://schema.org/Blog">				
 
-				<?php get_template_part( 'templates/loop'); ?>
+
+<section class = "section">
+         <div class = "container">
+            <span class = "title">
+               Column Layout
+            </span><br><br>
+            <div class = "columns">
+               <div class = "column">
+                  <p class = "has-text-black has-background-info">First column</p>
+               </div>
+               
+               <div class = "column">
+                  <p class = "has-text-black has-background-info">Second column</p>
+               </div>
+               
+               <div class = "column">
+                  <p class = "has-text-black has-background-info">Third column</p>
+               </div>
+               
+               <div class = "column">
+                  <p class = "has-text-black has-background-info">Fourth column</p>
+               </div>
+               
+            </div>
+         </div>
+      </section>
+
+
+
+
+
+
+<div class="section">
+
+    <div class="columns">
+		<div class="column">
+			<main id="main" class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="https://schema.org/Blog">	
+				<div class="container is-clearfix">			
+					<?php get_template_part( 'templates/loop'); ?>
 				
-				<div class="divider is-danger"> Hardcode Below</div>
+				
+					<div class="divider is-danger is-clearfix"> Hardcode Below</div>
 
-				<div class="container">
-				  <div class="py-6 has-background-primary has-text-white has-text-centered">
-					  
-					  <h3 class="has-text-white">This is a container.</h3>
-					  
-				    <p>This container is <strong class="has-text-white">centered</strong> on desktop and larger viewports.</p>
-				  </div>
-				</div>				
+				
+					<div class="py-6 has-background-primary has-text-white has-text-centered">
+						<h3 class="has-text-white">This is a container.</h3>
+					<p>This container is <strong class="has-text-white">centered</strong> on desktop and larger viewports.</p>
+					</div>
+
+				</div>
+							
 
 			</main>
 
@@ -153,7 +181,8 @@
 	 
 
 
-    </section>
+   
+
 </div>
 
    

@@ -17,7 +17,31 @@ those viewpoints.
 // Add a little margin after menu icons
 nav svg, .menu-item i { margin-right: 6px; }
 
-.hero.has-carousel .hero-body { z-index: -100 !important; }
+
+.hero.has-carousel .hero-body { z-index: -100 !important; min-height: 300px; }
+
+#carousel {
+	.item-1 {
+	background-image: url("../images/photo-1573421708341-9faa272865d1.jpg");
+	}
+	
+	.item-2 {
+	background-image: url("../images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
+	}
+	
+	.item-3 {
+	background-image: url("../images/kyle-head-p6rNTdAPbuk-unsplash.jpg");
+	}
+}
+
+
+.slide {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
 
 
 /*********************
