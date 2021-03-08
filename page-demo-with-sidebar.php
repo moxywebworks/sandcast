@@ -148,14 +148,29 @@
       </section>
 
 
+<!-- This snippet is very temporarily borrowed from the Maestro, Mr. Andy Clark, so I can finally begin to learn SVG! -->
+
+<svg viewBox="0 0 740 640" x="0" y="0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="condensed">
+<title>Our designs deliver</title>
+<g fill="pink" fill-rule="evenodd">
+<text class="text-brand" stroke-linecap="round" fill-rule="evenodd" font-size="240" font-weight="500">
+<tspan x="10" y="215">OUR</tspan>
+<tspan x="10" y="395">DESIGNS</tspan>
+<tspan x="10" y="575">DELIVER</tspan>
+</text>
+<text class="text-fill" font-size="48" font-weight="500" letter-spacing="1">
+<tspan x="10" y="635">WE KNOW OUR STUFF AND WE&#8217;RE FUN TO WORK WITH. WE&#8217;RE STUFF &amp; NONSENSE</tspan>
+</text>
+</g>
+</svg>
 
 
 
 
 <div class="section">
 
-    <div class="columns">
-		<div class="column">
+    <div class="columns p-b-lg">
+		<div class="column is-offset-2 is-8">
 			<main id="main" class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="https://schema.org/Blog">	
 				<div class="container is-clearfix">			
 					<?php get_template_part( 'templates/loop'); ?>

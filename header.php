@@ -36,6 +36,7 @@
         <?php endif; ?>
 
         <?php // put font scripts like Typekit/Adobe Fonts here ?>
+		<link rel="stylesheet" href="https://use.typekit.net/gst1jzl.css">
         <?php // end fonts ?>
 
         <?php // wordpress head functions ?>

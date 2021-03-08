@@ -1,5 +1,5 @@
 /******************************************************************
-Site Name:
+Site Name: Sandcast
 Author: MOXY WEBWORKS
 
 Stylesheet: Tablet & Small Desktop Stylesheet
@@ -9,22 +9,25 @@ like desktops. CSS Grid starts working its magic here so you
 can start to have fun with your layout(s).
 
 ******************************************************************/
+
 .hero.has-carousel .hero-body { z-index: -100 !important; }
 
 #carousel {
+
 	.item-1 {
 	background-image: url("../images/photo-1573421708341-9faa272865d1.jpg");
 	}
 	
 	.item-2 {
+
 	background-image: url("../images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
 	}
 	
 	.item-3 {
+
 	background-image: url("../images/kyle-head-p6rNTdAPbuk-unsplash.jpg");
 	}
 }
-
 
 .slide {
 	background-position: center center;

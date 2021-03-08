@@ -1,5 +1,5 @@
 /******************************************************************
-Site Name:
+Site Name: Sandcast
 Author: MOXY WEBWORKS
 
 Stylesheet: Base Stylesheet
@@ -12,37 +12,12 @@ only seen on tablets or desktops in the stylesheets targeted for
 those viewpoints.
 
 ******************************************************************/
-
+.condensed {
+    border: 3px solid red !important; 
+}
 
 // Add a little margin after menu icons
 nav svg, .menu-item i { margin-right: 6px; }
-
-
-.hero.has-carousel .hero-body { z-index: -100 !important; min-height: 300px; }
-
-#carousel {
-	.item-1 {
-	background-image: url("../images/photo-1573421708341-9faa272865d1.jpg");
-	}
-	
-	.item-2 {
-	background-image: url("../images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
-	}
-	
-	.item-3 {
-	background-image: url("../images/kyle-head-p6rNTdAPbuk-unsplash.jpg");
-	}
-}
-
-
-.slide {
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 100%;
-}
-
-
 
 /*********************
 GLOBAL STYLES
@@ -137,7 +112,7 @@ further. Using correct headings helps with readability, SEO, and accessibility.
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     margin: 0;
     color: $primary;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.2;
     text-rendering: optimizelegibility;
     // line-height: 1.2; capital letter width: 0.7

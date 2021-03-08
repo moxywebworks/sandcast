@@ -318,7 +318,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: myriad-pro, sans-serif;
 }
 
 code,
@@ -9101,15 +9101,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .is-family-primary {
-  font-family: "Lato", sans-serif !important;
+  font-family: myriad-pro, sans-serif !important;
 }
 
 .is-family-secondary {
-  font-family: "Lato", sans-serif !important;
+  font-family: myriad-pro, sans-serif !important;
 }
 
 .is-family-sans-serif {
-  font-family: "Lato", sans-serif !important;
+  font-family: myriad-pro, sans-serif !important;
 }
 
 .is-family-monospace {
