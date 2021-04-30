@@ -90,12 +90,10 @@
 							<div class="navbar-end">
 							     <div class="navbar-item">
 							        <div class="buttons">
-										<a class="button is-small is-warning">
-							           		 <strong>Buy Tickets by Phone</strong>
+										<a class="button is-small is-primary">
+							           		 <strong>Contact Us</strong>
 							          	</a>
-							          	<a class="button is-small is-success">
-							            	<strong>Buy Tickets Online</strong>
-							            </a>
+							          	
 							        </div>
 								</div>
 							</div>
