@@ -1206,6 +1206,11 @@ function plate_dashboard_widget_init() {
 }
 
 // Add in the Bulma Navwalker by https://www.worldoweb.co.uk/2018/wordpress-bulma-navwalker-font-awesome-support
-require_once('library/moxy-bulma/bulma-navwalker.php');
+// require_once('library/moxy-bulma/bulma-navwalker.php');
+
+require_once('library/moxy-bulma/navwalker.php');
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'primary' ),
+) );
 
 ?>

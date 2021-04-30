@@ -51,10 +51,12 @@
 
                 <div id="inner-header" class="container">
 
-					<nav class="navbar" aria-label="main navigation">
-						<div id="logo" class="navbar-brand">
-						  
-						<?php if (has_custom_logo()) { ?>
+					
+
+					<nav class="navbar container" role="navigation" aria-label="main navigation">
+                    <div id="logo" class="navbar-brand">
+                    
+                        <?php if (has_custom_logo()) { ?>
 							<a class="navbar-item" href="<?php echo home_url(); ?>" rel="nofollow" itemprop="url" title="<?php bloginfo('name'); ?>">
 								<?php the_custom_logo(); ?>
 							</a>
@@ -63,42 +65,26 @@
 						        <img src="<?php echo get_theme_file_uri(); ?>/library/images/logo.svg" itemprop="logo" alt="site logo" />
 							</a>
 						<?php } ?>
-						
-							<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-							  <span aria-hidden="true"></span>
-							  <span aria-hidden="true"></span>
-							  <span aria-hidden="true"></span>
-							</a>
-						</div>
-					
-						<div id="primary-menu" class="navbar-menu">
-							<div class="navbar-start">
-								<?php wp_nav_menu(array(
-									'theme-location'	=> 'main-nav',
-									'depth'				=>	3,
-									'menu'				=>	'NewNav',
-									'container'			=>	'',
-									'menu_class'		=>	'',
-									'items_wrap'		=>	'%3$s',
-									'walker'			=>	new Bulma_NavWalker(),
-									'fallback_cb'		=>	'Bulma_NavWalker::fallback'
-								));
-								?>
-						 	</div>
-						 	
-						 	<?php // remove this next div if you don't require it ?>
-							<div class="navbar-end">
-							     <div class="navbar-item">
-							        <div class="buttons">
-										<a class="button is-small is-primary">
-							           		 <strong>Contact Us</strong>
-							          	</a>
-							          	
-							        </div>
-								</div>
-							</div>
-						</div>
-					</nav>
+                                               
+                        <button class="button navbar-burger" data-target="primary-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+                    </div>
+                    <?php
+                    wp_nav_menu( array(
+                        'theme_location'    => 'primary',
+                        'depth'             => 0,
+                        'container'         => false,
+                        //'items_wrap'     => 'div',
+                        'menu_class'        => 'navbar-menu',
+                        'menu_id'           => 'primary-menu',
+                        'after'             => "</div>",
+                        'walker'            => new Navwalker())
+                    );
+                    ?>
+                </nav>
 
                 </div>
 
