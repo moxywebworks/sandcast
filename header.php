@@ -66,11 +66,9 @@
 							</a>
 						<?php } ?>
                                                
-                        <button class="button navbar-burger" data-target="primary-menu">
-							<span></span>
-							<span></span>
-							<span></span>
-						</button>
+                        <!-- <button class="button menu-button" data-target="primary-menu" id="menuButton" aria-label="menu" aria-expanded="false">
+                            <span class="burger-icon"></span>
+                        </button> -->
                     </div>
                     <?php
                     wp_nav_menu( array(
