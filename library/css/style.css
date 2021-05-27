@@ -4,7 +4,7 @@
 * One love :)
 */
 /******************************************************************
-Site Name:
+Site Name: Sandcaster
 Author:
 
 Stylesheet: Main Stylesheet
@@ -156,169 +156,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
         line-height: 3; // DO NOT set line height outside of the mixin, the mixin needs the line height value to calculate the crop correctly
     }
 */
-/*! @creativebulma/bulma-divider v1.1.0 | (c) 2020 Gaetan | MIT License | https://github.com/CreativeBulma/bulma-divider */
-@-webkit-keyframes spinAround {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-@keyframes spinAround {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-/* line 17, src/sass/app.sass */
-.divider {
-  position: relative;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  color: #7a7a7a;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  margin: 25px 0;
-}
-
-/* line 28, src/sass/app.sass */
-.divider::after, .divider::before {
-  content: "";
-  display: block;
-  flex: 1;
-  height: 1px;
-  background-color: #dbdbdb;
-}
-
-/* line 37, src/sass/app.sass */
-.divider:not(.is-right)::after {
-  margin-left: 10px;
-}
-
-/* line 41, src/sass/app.sass */
-.divider:not(.is-left)::before {
-  margin-right: 10px;
-}
-
-/* line 45, src/sass/app.sass */
-.divider.is-left::before {
-  display: none;
-}
-
-/* line 49, src/sass/app.sass */
-.divider.is-right::after {
-  display: none;
-}
-
-/* line 52, src/sass/app.sass */
-.divider.is-vertical {
-  flex-direction: column;
-  margin: 0 25px;
-}
-
-/* line 56, src/sass/app.sass */
-.divider.is-vertical::after, .divider.is-vertical::before {
-  height: auto;
-  width: 1px;
-}
-
-/* line 61, src/sass/app.sass */
-.divider.is-vertical::after {
-  margin-left: 0;
-  margin-top: 10px;
-}
-
-/* line 65, src/sass/app.sass */
-.divider.is-vertical::before {
-  margin-right: 0;
-  margin-bottom: 10px;
-}
-
-/* line 72, src/sass/app.sass */
-.divider.is-white::after, .divider.is-white::before {
-  background-color: white;
-}
-
-/* line 72, src/sass/app.sass */
-.divider.is-black::after, .divider.is-black::before {
-  background-color: #0a0a0a;
-}
-
-/* line 72, src/sass/app.sass */
-.divider.is-light::after, .divider.is-light::before {
-  background-color: whitesmoke;
-}
-
-/* line 72, src/sass/app.sass */
-.divider.is-dark::after, .divider.is-dark::before {
-  background-color: #363636;
-}
-
-/* line 72, src/sass/app.sass */
-.divider.is-primary::after, .divider.is-primary::before {
-  background-color: #00d1b2;
-}
-
-/* line 80, src/sass/app.sass */
-.divider.is-primary.is-light::after, .divider.is-primary.is-light::before {
-  background-color: #ebfffc;
-}
-
-/* line 72, src/sass/app.sass */
-.divider.is-link::after, .divider.is-link::before {
-  background-color: #3273dc;
-}
-
-/* line 80, src/sass/app.sass */
-.divider.is-link.is-light::after, .divider.is-link.is-light::before {
-  background-color: #eef3fc;
-}
-
-/* line 72, src/sass/app.sass */
-.divider.is-info::after, .divider.is-info::before {
-  background-color: #3298dc;
-}
-
-/* line 80, src/sass/app.sass */
-.divider.is-info.is-light::after, .divider.is-info.is-light::before {
-  background-color: #eef6fc;
-}
-
-/* line 72, src/sass/app.sass */
-.divider.is-success::after, .divider.is-success::before {
-  background-color: #48c774;
-}
-
-/* line 80, src/sass/app.sass */
-.divider.is-success.is-light::after, .divider.is-success.is-light::before {
-  background-color: #effaf3;
-}
-
-/* line 72, src/sass/app.sass */
-.divider.is-warning::after, .divider.is-warning::before {
-  background-color: #ffdd57;
-}
-
-/* line 80, src/sass/app.sass */
-.divider.is-warning.is-light::after, .divider.is-warning.is-light::before {
-  background-color: #fffbeb;
-}
-
-/* line 72, src/sass/app.sass */
-.divider.is-danger::after, .divider.is-danger::before {
-  background-color: #f14668;
-}
-
-/* line 80, src/sass/app.sass */
-.divider.is-danger.is-light::after, .divider.is-danger.is-light::before {
-  background-color: #feecf0;
-}
-
 /* Ye Olde Bones Grid
 * Hear Ye, hear ye!
 * This is the old style grid, now commented out
@@ -363,6 +200,66 @@ only seen on tablets or desktops in the stylesheets targeted for
 those viewpoints.
 
 ******************************************************************/
+.menu-button {
+  display: inline-block;
+  padding: 0.5em;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+}
+
+.burger-icon {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.burger-icon, .burger-icon::before, .burger-icon::after {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #444;
+  outline: 1px solid transparent;
+  -webkit-transition-property: background-color, -webkit-transform;
+  -moz-transition-property: background-color, -moz-transform;
+  -o-transition-property: background-color, -o-transform;
+  transition-property: background-color, transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.burger-icon::before, .burger-icon::after {
+  position: absolute;
+  content: "";
+}
+.burger-icon::before {
+  top: -8px;
+}
+.burger-icon::after {
+  top: 8px;
+}
+
+.menu-button.is-active .burger-icon {
+  background-color: transparent;
+}
+.menu-button.is-active .burger-icon::before {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -moz-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
+.menu-button.is-active .burger-icon::after {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -moz-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 .condensed {
   border: 3px solid red !important;
 }
@@ -852,6 +749,70 @@ compete with the base styles.
   I find it easier to do it this way than to have to override base styles.
 
   ******************************************************************/
+  .menu-button {
+    display: inline-block;
+    padding: 0.5em;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+  }
+
+  .burger-icon {
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .burger-icon, .burger-icon::before, .burger-icon::after {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #444;
+    outline: 1px solid transparent;
+    -webkit-transition-property: background-color, -webkit-transform;
+    -moz-transition-property: background-color, -moz-transform;
+    -o-transition-property: background-color, -o-transform;
+    transition-property: background-color, transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .burger-icon::before, .burger-icon::after {
+    position: absolute;
+    content: "";
+  }
+  .burger-icon::before {
+    top: -8px;
+  }
+  .burger-icon::after {
+    top: 8px;
+  }
+
+  .menu-button.is-active .burger-icon {
+    background-color: transparent;
+  }
+  .menu-button.is-active .burger-icon::before {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -moz-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu-button.is-active .burger-icon::after {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -moz-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .condensed {
+    border: 3px solid red !important;
+  }
+
   .wrap {
     padding: 1em;
   }

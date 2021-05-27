@@ -34,6 +34,7 @@
 		<?php // all js scripts are loaded in library/functions.php ?>
 		<?php wp_footer(); ?>
 
+		
 	</body>
 
 </html> <!-- This is the end. My only friend. -->

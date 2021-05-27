@@ -12,6 +12,23 @@ only seen on tablets or desktops in the stylesheets targeted for
 those viewpoints.
 
 ******************************************************************/
+
+// This stuff for sass burger
+.menu-button {
+	display: inline-block;
+	padding: .5em;
+	background-color: #fafafa;
+	border: 1px solid #ccc;
+}
+
+.burger-icon {
+	@include burger(25px, 3px, 5px, #444);
+}
+
+.menu-button.is-active .burger-icon {
+	@include burger-to-cross;
+}
+
 .condensed {
     border: 3px solid red !important; 
 }

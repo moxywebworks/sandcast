@@ -5,7 +5,7 @@
 */
 
 /******************************************************************
-Site Name:
+Site Name: Sandcaster
 Author:
 
 Stylesheet: Main Stylesheet
@@ -36,6 +36,9 @@ the whole project.
 // Shared Variables
 @import "partials/shared-variables";
 
+// the burger
+@import "partials/burger";
+
 // typography
 //@import "partials/typography";
 
@@ -52,7 +55,7 @@ the whole project.
 
 
 // Bulma Divider :: https://github.com/CreativeBulma/bulma-divider
-@import "../moxy-bulma/node_modules/@creativebulma/bulma-divider/dist/bulma-divider";
+//@import "../moxy-bulma/node_modules/@creativebulma/bulma-divider/dist/bulma-divider";
 
 
 
