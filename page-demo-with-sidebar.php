@@ -21,6 +21,7 @@
 		</div>
 		<div class="item-3 slide is-flex is-justify-content-center is-align-items-center">
 			<h1 class="has-text-white">to return to our stage!</h1>
+			<h1>Hello, World</h1>
 		</div>
 	</div>
 	<div class="hero-head"></div>
@@ -32,7 +33,7 @@
 <section class="hero is-primary is-fullheight">
   <div class="hero-body">
 	<div class="container has-text-centered">  
-	    <h2 class="title">
+	    <h2 class="title has-text-primary-light" style=" border: 3px solid green;">
 	      Primary Hero Full Height
 	    </p>
 	    <h3 class="subtitle">
@@ -45,7 +46,7 @@
 <section id="two-cols">
 	<div class="columns is-marginless">
 		<div class="column is-flex is-justify-content-center is-align-items-center is-half-tablet" style="min-height: 300px; background-color: pink; ">
-		    <h2 class="" data-aos="fade-right">Big News Here</h2>
+		    <h2 class="" data-aos="fade-right"><i class="fas fa-dog"></i> Big News Here</h2>
 		 </div>
 		  
 		 <div class="column is-flex is-justify-content-center is-align-items-center is-half-tablet" style="min-height: 300px; background-color: #E56399; ">
@@ -173,7 +174,7 @@
 		<div class="column is-offset-2 is-8">
 			<main id="main" class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="https://schema.org/Blog">	
 				<div class="container is-clearfix">			
-					<?php get_template_part( 'templates/loop'); ?>
+					<?php get_template_part("templates/loop"); ?>
 				
 				
 					<div class="divider is-danger is-clearfix"> Hardcode Below</div>
@@ -192,7 +193,9 @@
 		</div>
 
 	
-	 <?php // get_sidebar(); ?>
+	 <?php
+// get_sidebar();
+?>
 	 
 
 
@@ -202,4 +205,5 @@
 
    
 
-<?php get_footer(); ?>
+<?php get_footer();
+?>

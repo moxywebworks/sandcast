@@ -22,10 +22,10 @@
         <![endif]-->
 
         <!-- Apple Touch Icon -->
-        <!-- <link rel="apple-touch-icon" href="<?php echo get_theme_file_uri(); ?>/library/images/apple-touch-icon.png"> -->
+      	  <!-- <link rel="apple-touch-icon" href="<?php echo get_theme_file_uri(); ?>/library/images/apple-touch-icon.png"> -->
         
         <!-- Font Awesome 5 -->
-        <script src="https://kit.fontawesome.com/d9902ceb2d.js" crossorigin="anonymous"></script>
+        <!-- <script src="https://kit.fontawesome.com/d9902ceb2d.js" crossorigin="anonymous"></script> -->
 
         <!-- Safari Pinned Tab Icon -->
         <link rel="mask-icon" href="<?php echo get_theme_file_uri(); ?>/library/images/icon.svg" color="#0088cc">
